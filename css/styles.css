@@ -310,7 +310,7 @@ ul {
 }
 
 .backdrop {
-    width: 100%;
+    width: 1440px;
     height: 100%;
     background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     position: fixed;
@@ -379,7 +379,7 @@ ul {
 }
 
 .service-input {
-   /* width: 360px;
+    /*width: 360px;
     height: 40px;*/
     padding: 12px 40px;
     border: 1px solid #2e2f42;
