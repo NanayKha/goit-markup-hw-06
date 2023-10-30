@@ -113,7 +113,7 @@ footer {
     gap: 16px;
     padding-top: 16px;
     height: 40px;
-    padding-left: 269px;  
+    padding-left: 120px;  
 }
 
 .footer-socials-icon {
@@ -144,7 +144,7 @@ footer {
 .footer-social-media {
     /*display: flex;*/
     color: var(--WHITE, #FFF);
-    padding-left: 269px;
+    padding-left: 120px;
     margin: 0px;
     height: 24px;
     /* Body Medium */
@@ -155,6 +155,52 @@ footer {
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
     
+}
+
+.input-sub {
+    border: 2px solid white;
+    background: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 264px;
+    background-color: none;
+    margin-right: 24px;
+}
+
+.input-sub::placeholder {
+    color: var(--WHITE, #FFF);
+}
+
+.btn-sub {
+    display: inline-flex;
+    align-items: center;
+    color: var(--WHITE, #FFF);
+    padding: 8px 24px;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);   
+    border: none;
+}
+
+.btn-sub svg {
+    fill: var(--WHITE, #FFF);
+}
+
+.btn-sub:hover,
+.btn-sub:focus {
+    border-radius: 4px;
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-sub {
+    margin-left: 80px;
+}
+
+.footer-subscribe-text {
+    color: var(--WHITE, #FFF);
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 /*END OF GENERAL*/
 
@@ -284,6 +330,10 @@ ul {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     padding-top: 24px;
     padding-right: 24px;
+    text-align: center;
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-weight: 500px;
+    padding-left:24px;
 }
 
 .is-hidden {
@@ -307,9 +357,125 @@ ul {
     cursor: pointer; 
 }
 
-.modal-close-btn:hover {
-    fill: currentColor;
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    fill: var(--OCEAN, #404BBF);
     border: 1px solid currentColor;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(64, 75, 191, 1);   
+}
+
+.service-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.input-label {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.service-input {
+   /* width: 360px;
+    height: 40px;*/
+    padding: 12px 40px;
+    border: 1px solid #2e2f42;
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-icon {
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-input:focus + .service-icon,
+.service-input:hover + .service-icon {
+    fill: #4D5AE5;
+}
+
+.service-input:hover {
+    border-radius: 4px;
+    border: 1px solid #4D5AE5;
+}
+
+.service-input-textarea {
+    border: 1px solid #2e2f42;
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 16px;
+}
+
+.service-agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agree-checkbox {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 23px;
+    opacity: 0;
+}
+
+.agree-check-icon {
+    fill: none;
+    margin-right: 8px;
+    border: 1px solid rgb(103, 100, 100);
+    border-radius: 2px;
+    transition: 250ms;
+    transition-property: border-color, background-color, fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-agree .agree-checkbox:focus + .agree-check-icon,
+.service-agree .agree-checkbox:checked:focus + .agree-check-icon {
+    outline: 1px solid #767575;
+    background-color: #404BBF;
+    /*fill: var(--OCEAN, #404BBF);
+    stroke-width: 1px;
+    stroke: var(--OCEAN, #404BBF);*/
+}
+
+.service-agree .agree-checkbox:checked + .agree-check-icon {
+    background-color: var(--iris);
+    border-color: var(--iris);
+    fill: white;
+    outline: none;
+    stroke: white;
+    stroke-width: 0.2;
+}
+
+.agree-text {
+    font-size: 12px;
+}
+
+.modal-send {
+    margin-top: 15px;
+    padding: 16px 32px;
+    color: white;
+    border-color: transparent;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-send:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--OCEAN, #404BBF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 /*END OF HERO*/
 .section3 {
